@@ -108,12 +108,7 @@
   border-color: rgba(0, 0, 0, 0.95) transparent transparent transparent;
 }
 
-.course:hover .prereqTooltip {
-  visibility: visible;
-  opacity: 1;
-  transition-delay: 0.6s;
-  transform: translateX(-50%) translateY(-4px);
-}
+
 
 .course:active .prereqTooltip,
 .course.dragging .prereqTooltip {

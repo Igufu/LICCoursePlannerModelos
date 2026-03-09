@@ -52,17 +52,20 @@ export default function PlannerPage() {
     // Validate semester-specific constraints
     if (containerId.startsWith('sem')) {
       const semesterNumber = parseInt(containerId.replace('sem', ''));
-
+      /*
       if (!isParityValid(courseData, semesterNumber)) {
         alert(t('parityError'));
         return;
       }
+      */
 
+    /*
       if (!validatePrerequisites(courseId, semesterNumber, state, findCourseData)) {
         const prereqMessage = getPrerequisiteErrorMessage(courseData, t);
         alert(prereqMessage);
         return;
       }
+        */
     }
 
     dispatch({
@@ -94,12 +97,7 @@ export default function PlannerPage() {
 
   return (
     <div className={styles.container}>
-      <div className={styles.backgroundGradient}></div>
-      <div className={styles.backgroundOrbs}>
-        <div className={styles.orb1}></div>
-        <div className={styles.orb2}></div>
-        <div className={styles.orb3}></div>
-      </div>
+    
 
       <header className={styles.header}>
         <div className={styles.headerContent}>
